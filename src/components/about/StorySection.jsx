@@ -46,14 +46,16 @@ export default function StorySection() {
             </div>
           </div>
 
-          {/* Illustration — next to cards, not overlapping, 2x bigger */}
+          {/* Illustration — 1244x854 SVG, scales to fit */}
           <div
-            className="hidden lg:block lg:w-[45%] img-shield"
+            className="hidden lg:block lg:w-[45%] flex-shrink-0 img-shield"
             aria-hidden="true"
           >
             <img
               src="/illustration-story.svg"
               alt=""
+              width="1244"
+              height="854"
               className="w-full h-auto block"
               draggable="false"
             />
