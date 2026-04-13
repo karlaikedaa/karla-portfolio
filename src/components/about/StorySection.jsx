@@ -4,11 +4,11 @@ export default function StorySection() {
   return (
     <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6" aria-label="Minha história">
       <div
-        className="mx-auto flex flex-col lg:flex-row items-start gap-8 lg:gap-16"
+        className="mx-auto"
         style={{ maxWidth: 'var(--max-w-content)' }}
       >
         {/* Text column */}
-        <div className="w-full lg:flex-1 space-y-0">
+        <div className="w-full max-w-3xl space-y-0">
           {/* Label */}
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-text-brown">
             Minha história
@@ -44,21 +44,6 @@ export default function StorySection() {
             <StatCard value="15+" label="anos em comunicação" />
             <StatCard value="20+" label="projetos entregues" />
           </div>
-        </div>
-
-        {/* Illustration column */}
-        <div
-          className="hidden lg:flex flex-shrink-0 items-end justify-center img-shield"
-          style={{ maxWidth: 440, width: '100%' }}
-          aria-hidden="true"
-        >
-          <img
-            src="/illustration-story.png"
-            alt=""
-            className="w-full h-auto object-contain"
-            loading="lazy"
-            draggable="false"
-          />
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export default function ExpertiseSection() {
           <h2 className="font-heading text-3xl lg:text-[44.8px] font-medium leading-tight text-text-dark">
             O que diferencia minha{' '}
             <em className="font-heading italic text-rose-accent-original">atuação</em>
-            <span className="block">como designer sênior</span>
+            <span className="block">como designer de produto</span>
           </h2>
         </div>
 

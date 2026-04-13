@@ -5,7 +5,7 @@ export const projects = [
     tag: 'Volkswagen caminhões',
     title: 'Trucker Pay',
     description:
-      'Plataforma digital completa para atender o segmento de transporte de carga: pagamento, rede de manutenção e controle de jornada do caminhoneiro. Benefícios para do autônomo ao gestor de frotas.',
+      'Plataforma digital completa para atender o segmento de transporte de carga: pagamento, rede de manutenção e controle de jornada do caminhoneiro. Benefícios do autônomo ao gestor de frotas.',
     image: '/Bento/Whisk_62c6b1e6c9afb77a80648637374f89aadr.jpeg',
     row: 1,
   },
@@ -22,7 +22,7 @@ export const projects = [
   {
     id: 'layover',
     tag: 'Latam linhas aéreas',
-    title: 'Projeto - Layover',
+    title: 'Projeto Layover',
     description:
       'Gestão de layover para companhias aéreas: fluxos de atendimento e interfaces para operadores e clientes.',
     image: '/Bento/download.jpeg',
@@ -33,7 +33,7 @@ export const projects = [
     tag: 'Serasa Experian',
     title: 'Consulta de Crédito Unificada',
     description:
-      'Unificação de marcas e sistemas de consulta de crédito, simplificando jornadas de múltiplas plataformas em uma só.',
+      'Unificação de marcas e sistemas de consulta de crédito, simplificando múltiplas jornadas em uma só.',
     image: '/Bento/Relatorio-de-vendas-para-analise-de-credito-Mercado-Pago.webp',
     row: 2,
   },
@@ -58,8 +58,8 @@ export const projects = [
   },
   {
     id: 'sap',
-    tag: 'Gov Tech · discovery',
-    title: 'SAP — Secretaria de Aquicultura e Pesca',
+    tag: 'Govtech - Discovery',
+    title: 'Secretaria de Aquicultura e Pesca',
     description:
       'Sistema para concessão de benefícios públicos com foco em acessibilidade e simplicidade para populações vulneráveis pós desastre ambiental.',
     image: '/Bento/img.png',
