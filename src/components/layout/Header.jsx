@@ -57,7 +57,9 @@ export default function Header() {
           {/* Desktop CTA buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="#"
+              href="https://docs.google.com/document/d/11Mti9GG8ctCRyEE-1H9V13oBIva1yYrI/edit?usp=sharing&ouid=106812508871585110962&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 font-body text-sm text-text-button no-underline rounded-full border border-warm/50 hover:border-rose-accent hover:bg-warm/20 transition-all duration-300"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -68,7 +70,9 @@ export default function Header() {
               Baixe meu CV
             </a>
             <a
-              href="#"
+              href="https://wa.me/5511995370667"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 font-body text-sm text-text-button bg-warm no-underline rounded-full border border-warm hover:bg-peach hover:border-peach hover:text-dark transition-all duration-300"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -117,7 +121,9 @@ export default function Header() {
 
             <div className="flex flex-col gap-3 mt-6">
               <a
-                href="#"
+                href="https://docs.google.com/document/d/11Mti9GG8ctCRyEE-1H9V13oBIva1yYrI/edit?usp=sharing&ouid=106812508871585110962&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 font-body text-sm text-text-button no-underline rounded-full border border-warm/50 hover:border-rose-accent transition-all"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -128,7 +134,9 @@ export default function Header() {
                 Baixe meu CV
               </a>
               <a
-                href="#"
+                href="https://wa.me/5511995370667"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 font-body text-sm text-text-button bg-warm no-underline rounded-full hover:bg-peach transition-all"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

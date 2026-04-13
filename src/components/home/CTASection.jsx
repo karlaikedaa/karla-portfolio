@@ -35,7 +35,7 @@ export default function CTASection() {
           </h2>
 
           <p className="font-body text-lg text-olive mx-auto max-w-2xl">
-            Estou aberta a projetos como freelance, consultoria e oportunidades em produto.
+            Estou aberta a projetos como freelancer e oportunidades em produto.
           </p>
 
           <nav
@@ -81,9 +81,11 @@ export default function CTASection() {
 
             {/* Phone */}
             <a
-              href="tel:+5511995370667"
+              href="https://wa.me/5511995370667"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-3 no-underline group"
-              aria-label="Ligar para (11) 99537-0667"
+              aria-label="Conversar no WhatsApp (11) 99537-0667"
             >
               <div className="w-11 h-11 rounded-full bg-warm-alt/15 flex items-center justify-center group-hover:bg-warm-alt/25 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e9d7c2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
