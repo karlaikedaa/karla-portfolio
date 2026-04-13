@@ -46,15 +46,16 @@ export default function StorySection() {
           </div>
         </div>
 
-        {/* Illustration column — large, bottom-aligned with stats */}
+        {/* Illustration column — large, overflows top, base aligned with stats */}
         <div
-          className="hidden lg:block lg:w-[45%] img-shield"
+          className="hidden lg:flex lg:w-[45%] items-end justify-end img-shield overflow-visible"
           aria-hidden="true"
         >
           <img
             src="/illustration-story.svg"
             alt=""
-            className="w-full h-auto block"
+            className="block"
+            style={{ width: '120%', maxWidth: 'none', marginTop: '-80px' }}
             draggable="false"
           />
         </div>
