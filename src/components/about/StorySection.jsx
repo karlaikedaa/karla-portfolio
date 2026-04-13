@@ -46,16 +46,17 @@ export default function StorySection() {
           </div>
         </div>
 
-        {/* Illustration column — aligned with stats cards */}
+        {/* Illustration column — aligned bottom with stats cards */}
         <div
           className="hidden lg:flex flex-shrink-0 items-end justify-center self-end img-shield"
-          style={{ maxWidth: 380, width: '100%' }}
+          style={{ width: 380 }}
           aria-hidden="true"
         >
           <img
-            src="/illustration-story.png"
+            src="/illustration-story.svg"
             alt=""
-            className="w-full h-auto object-contain"
+            className="w-full h-auto"
+            style={{ aspectRatio: '695 / 447' }}
             loading="lazy"
             draggable="false"
           />
