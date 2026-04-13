@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Colors — WCAG AAA adjusted === */
+  --color-dark: #1c1c1a;
+  --color-light: #faf7f2;
+  --color-off-white: #fffdfa;
+
+  --color-rose-bg: #6e4c48;
+  --color-rose-accent: #e0b5af;
+  --color-rose-accent-original: #be8a84;
+  --color-rose-text: #764540;
+
+  --color-olive: #ccc99e;
+  --color-olive-text: #555324;
+  --color-warm: #e7d6c0;
+  --color-warm-alt: #e9d7c2;
+  --color-peach: #e8b08c;
+
+  --color-text-dark: #2e2b25;
+  --color-text-muted: #595349;
+  --color-text-green: #4d5140;
+  --color-text-brown: #71433d;
+  --color-text-button: #483612;
+  --color-copyright: #dbcfb7;
+
+  /* === Typography === */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* === Layout === */
+  --max-w-content: 1152px;
+}
+
+/* === Base overrides (inside layer so Tailwind utilities win) === */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-dark);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Protect images and videos from easy download */
+  img,
+  video {
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: auto;
+  }
+}
+
+@layer base {
+  /* === Focus visible for accessibility === */
+  :focus-visible {
+    outline: 2px solid var(--color-rose-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* === Skip link === */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    z-index: 100;
+    padding: 8px 16px;
+    background: var(--color-dark);
+    color: var(--color-warm-alt);
+    font-family: var(--font-body);
+    font-size: 14px;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+    transition: top 0.2s;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+}
+
+/* === Animations === */
+@keyframes orbit {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes carousel-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+/* === Reduced motion — must be unlayered to override everything === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
