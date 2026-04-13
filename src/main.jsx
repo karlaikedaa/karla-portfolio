@@ -4,9 +4,33 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
-// Block right-click on images and videos to discourage downloads
+// === Image protection layer ===
+
+// Block right-click globally (prevents "Save image as")
 document.addEventListener('contextmenu', (e) => {
+  const el = e.target
+  if (
+    el.tagName === 'IMG' ||
+    el.tagName === 'VIDEO' ||
+    el.tagName === 'CANVAS' ||
+    el.closest('figure') ||
+    el.closest('.protected-img') ||
+    el.closest('[class*="aspect-"]')
+  ) {
+    e.preventDefault()
+  }
+})
+
+// Block drag on all images
+document.addEventListener('dragstart', (e) => {
   if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
+    e.preventDefault()
+  }
+})
+
+// Block Ctrl+S (save page) and Ctrl+U (view source) and Ctrl+Shift+I (DevTools)
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) {
     e.preventDefault()
   }
 })

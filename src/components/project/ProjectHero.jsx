@@ -234,7 +234,7 @@ export default function ProjectHero({ project }) {
           style={{ backgroundColor: '#2c2c2a' }}
           aria-hidden="true"
         >
-          <div className="mx-auto" style={{ maxWidth: 'var(--max-w-content)' }}>
+          <div className="mx-auto img-shield" style={{ maxWidth: 'var(--max-w-content)' }}>
             <img
               src={project.heroImage}
               alt=""

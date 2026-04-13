@@ -13,7 +13,7 @@ export default function UXProjectCard({ project }) {
       aria-label={project.title}
     >
       {/* Image */}
-      <div className="relative overflow-hidden bg-warm-alt/30" style={{ height: '223px' }}>
+      <div className="relative overflow-hidden bg-warm-alt/30 img-shield" style={{ height: '223px' }}>
         <img
           src={project.coverImage}
           alt={project.title}

@@ -7,7 +7,7 @@ function FullImageSection({ section }) {
   return (
     <section aria-label={section.label || 'Imagem do projeto'} className="w-full">
       <div className="px-6 md:px-12 py-8 bg-off-white">
-        <div className="mx-auto" style={{ maxWidth: '1200px' }}>
+        <div className="mx-auto img-shield" style={{ maxWidth: '1200px' }}>
           <img
             src={section.src}
             alt={section.label || ''}

@@ -11,7 +11,7 @@ export default function AboutSection() {
         {/* Photo */}
         <div className="w-full lg:w-1/2 max-w-md">
           <div
-            className="aspect-[4/5] rounded-2xl overflow-hidden"
+            className="aspect-[4/5] rounded-2xl overflow-hidden img-shield"
             style={{ background: 'linear-gradient(135deg, #e9d7c2 0%, #d4a29c 50%, #b5b285 100%)' }}
           >
             <img

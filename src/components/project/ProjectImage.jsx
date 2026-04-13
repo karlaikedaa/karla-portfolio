@@ -1,6 +1,6 @@
 export default function ProjectImage({ src, alt = '', caption }) {
   return (
-    <figure className="my-8">
+    <figure className="my-8 img-shield">
       <img
         src={src}
         alt={alt}

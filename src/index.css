@@ -52,7 +52,21 @@
   video {
     -webkit-user-drag: none;
     user-select: none;
-    pointer-events: auto;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+  }
+
+  /* Overlay shield on image containers — only elements that hold a direct <img> child */
+  .img-shield {
+    position: relative;
+  }
+
+  .img-shield::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: transparent;
   }
 }
 

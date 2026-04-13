@@ -11,7 +11,7 @@ export default function DesignCard({ item }) {
         aria-label={item.title}
       >
         {/* Image */}
-        <div className="relative overflow-hidden bg-warm-alt/30" style={{ height: '200px' }}>
+        <div className="relative overflow-hidden bg-warm-alt/30 img-shield" style={{ height: '200px' }}>
           <img
             src={item.coverImage}
             alt={item.title}

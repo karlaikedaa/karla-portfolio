@@ -48,7 +48,7 @@ export default function StorySection() {
 
         {/* Illustration column */}
         <div
-          className="hidden lg:flex flex-shrink-0 items-end justify-center"
+          className="hidden lg:flex flex-shrink-0 items-end justify-center img-shield"
           style={{ maxWidth: 440, width: '100%' }}
           aria-hidden="true"
         >
