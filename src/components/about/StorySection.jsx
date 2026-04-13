@@ -2,13 +2,13 @@ import StatCard from '../ui/StatCard'
 
 export default function StorySection() {
   return (
-    <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6" aria-label="Minha história">
+    <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6 overflow-hidden" aria-label="Minha história">
       <div
-        className="mx-auto flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-12"
+        className="mx-auto relative"
         style={{ maxWidth: 'var(--max-w-content)' }}
       >
-        {/* Text column */}
-        <div className="w-full lg:flex-1 min-w-0 space-y-0">
+        {/* Text column — ~58% width like Figma (665/1152) */}
+        <div className="w-full lg:w-[58%] space-y-0">
           {/* Label */}
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-text-brown">
             Minha história
@@ -46,10 +46,10 @@ export default function StorySection() {
           </div>
         </div>
 
-        {/* Illustration column — side by side, not overlapping text */}
+        {/* Illustration — positioned absolute, bottom-right, partially cropped like Figma */}
         <div
-          className="hidden lg:block flex-shrink-0 img-shield"
-          style={{ width: 'clamp(380px, 38%, 520px)' }}
+          className="hidden lg:block absolute bottom-0 right-0 img-shield pointer-events-none"
+          style={{ width: '50%', transform: 'translateX(8%)' }}
           aria-hidden="true"
         >
           <img
