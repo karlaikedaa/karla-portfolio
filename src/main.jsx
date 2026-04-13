@@ -21,12 +21,19 @@ document.addEventListener('contextmenu', (e) => {
   }
 })
 
-// Block drag on all images
+// Block drag on all images and set draggable=false globally
 document.addEventListener('dragstart', (e) => {
   if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
     e.preventDefault()
   }
 })
+
+// Ensure all images have draggable=false
+new MutationObserver(() => {
+  document.querySelectorAll('img:not([draggable="false"])').forEach((img) => {
+    img.draggable = false
+  })
+}).observe(document.body, { childList: true, subtree: true })
 
 // Block Ctrl+S (save page) and Ctrl+U (view source) and Ctrl+Shift+I (DevTools)
 document.addEventListener('keydown', (e) => {
