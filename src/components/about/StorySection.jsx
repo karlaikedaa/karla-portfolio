@@ -2,9 +2,9 @@ import StatCard from '../ui/StatCard'
 
 export default function StorySection() {
   return (
-    <section className="bg-off-white py-24 px-6" aria-label="Minha história">
+    <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6" aria-label="Minha história">
       <div
-        className="mx-auto flex flex-col lg:flex-row items-start gap-16"
+        className="mx-auto flex flex-col lg:flex-row items-start gap-8 lg:gap-16"
         style={{ maxWidth: 'var(--max-w-content)' }}
       >
         {/* Text column */}

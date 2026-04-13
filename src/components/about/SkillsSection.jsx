@@ -6,7 +6,7 @@ export default function SkillsSection() {
   const bottomCards = skillCategories.filter(c => c.card === false)
 
   return (
-    <section className="bg-off-white py-24 px-6" aria-label="Competências e habilidades">
+    <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6" aria-label="Competências e habilidades">
       <div className="mx-auto space-y-12" style={{ maxWidth: 'var(--max-w-content)' }}>
 
         {/* Header */}

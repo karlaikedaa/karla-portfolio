@@ -2,27 +2,27 @@ import { experience, education, tools } from '../../data/timeline'
 
 export default function TimelineSection() {
   return (
-    <section className="bg-white py-24 px-6" aria-label="Trajetória profissional">
+    <section className="bg-white py-14 md:py-20 lg:py-24 px-6" aria-label="Trajetória profissional">
       <div className="mx-auto" style={{ maxWidth: 'var(--max-w-content)' }}>
 
         {/* Header */}
-        <div className="space-y-3 mb-16">
+        <div className="space-y-3 mb-10 md:mb-16">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-rose-text">
             Trajetória
           </span>
-          <h2 className="font-heading text-[41.6px] font-medium leading-tight text-text-dark">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-[41.6px] font-medium leading-tight text-text-dark">
             Linha do tempo profissional
           </h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
 
           {/* Experience column */}
           <div className="w-full lg:w-7/12">
             <h3 className="font-mono text-xs uppercase tracking-[0.15em] text-rose-text mb-8">
               Experiência Profissional
             </h3>
-            <div className="space-y-10 border-l border-warm/40 pl-8 ml-1">
+            <div className="space-y-10 border-l border-warm/40 pl-5 md:pl-8 ml-1">
               {experience.map((item) => (
                 <TimelineItem key={item.company + item.period} item={item} type="experience" />
               ))}
@@ -37,7 +37,7 @@ export default function TimelineSection() {
               <h3 className="font-mono text-xs uppercase tracking-[0.15em] text-rose-text mb-8">
                 Formação
               </h3>
-              <div className="space-y-8 border-l border-warm/40 pl-8 ml-1">
+              <div className="space-y-8 border-l border-warm/40 pl-5 md:pl-8 ml-1">
                 {education.map((item) => (
                   <TimelineItem key={item.title + item.period} item={item} type="education" />
                 ))}
@@ -91,7 +91,7 @@ function TimelineItem({ item, type }) {
     <div className="relative">
       {/* Timeline dot */}
       <span
-        className="absolute -left-[2.125rem] top-[6px] w-2.5 h-2.5 rounded-full bg-rose-accent/70 border-2 border-white"
+        className="absolute -left-[1.45rem] md:-left-[2.125rem] top-[6px] w-2.5 h-2.5 rounded-full bg-rose-accent/70 border-2 border-white"
         aria-hidden="true"
       />
       <div className="space-y-1.5">

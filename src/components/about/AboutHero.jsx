@@ -2,7 +2,7 @@ import Button from '../ui/Button'
 
 export default function AboutHero() {
   return (
-    <section className="bg-dark py-24 lg:py-28 px-6" aria-label="Sobre Karla Ikeda">
+    <section className="bg-dark py-14 md:py-20 lg:py-28 px-6" aria-label="Sobre Karla Ikeda">
       <div
         className="mx-auto space-y-6"
         style={{ maxWidth: 'var(--max-w-content)' }}
@@ -16,16 +16,16 @@ export default function AboutHero() {
         </div>
 
         {/* Name */}
-        <h1 className="font-heading text-[64px] font-medium leading-[1.05] text-warm-alt">
+        <h1 className="font-heading text-4xl md:text-5xl lg:text-[64px] font-medium leading-[1.05] text-warm-alt">
           Karla Ikeda
         </h1>
 
         {/* Subtitle lines */}
         <div className="space-y-0">
-          <p className="font-heading text-[36px] leading-tight text-warm-alt/50 italic">
+          <p className="font-heading text-xl md:text-2xl lg:text-[36px] leading-tight text-warm-alt/50 italic">
             Product &amp; Service Designer
           </p>
-          <p className="font-heading text-[36px] leading-tight text-rose-accent italic">
+          <p className="font-heading text-xl md:text-2xl lg:text-[36px] leading-tight text-rose-accent italic">
             orientada a estratégia, pesquisa e resultado.
           </p>
         </div>
