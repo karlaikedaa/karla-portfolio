@@ -4,11 +4,11 @@ export default function StorySection() {
   return (
     <section className="bg-off-white py-14 md:py-20 lg:py-24 px-6" aria-label="Minha história">
       <div
-        className="mx-auto flex flex-col lg:flex-row items-stretch gap-8 lg:gap-0"
+        className="mx-auto flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-0"
         style={{ maxWidth: 'var(--max-w-content)' }}
       >
         {/* Text column */}
-        <div className="w-full lg:flex-1 space-y-0">
+        <div className="w-full lg:w-[55%] space-y-0">
           {/* Label */}
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-text-brown">
             Minha história
@@ -46,17 +46,15 @@ export default function StorySection() {
           </div>
         </div>
 
-        {/* Illustration column — full height, aligned with text */}
+        {/* Illustration column — large, bottom-aligned with stats */}
         <div
-          className="hidden lg:flex flex-shrink-0 items-end justify-end img-shield"
-          style={{ width: '45%' }}
+          className="hidden lg:block lg:w-[45%] img-shield"
           aria-hidden="true"
         >
           <img
             src="/illustration-story.svg"
             alt=""
-            className="w-full h-auto"
-            loading="lazy"
+            className="w-full h-auto block"
             draggable="false"
           />
         </div>
