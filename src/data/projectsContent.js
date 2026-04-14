@@ -408,6 +408,7 @@ export const projectsContent = {
         body2: [
           'Sim! A página inicial teria como base os 3 perfis de usuário que estabeleci e, cada um deles, poderia fazer suas aplicações/negociações, conforme sua preferência.',
         ],
+        imagesLayout: '1-left-2-right',
         images: [
           '/images/projects/meu app de investimentos/7af80d27-6f39-4736-acf8-e12dabb4b130_rw_1920.png',
           '/images/projects/meu app de investimentos/c35fad95-dcd7-43b8-92c4-0f790f4071bd_rw_1920.png',

@@ -235,7 +235,19 @@ export default function ProjectSection({ section }) {
         {section.image && <ProjectImage src={section.image} alt="" />}
 
         {/* Multiple images */}
-        {section.images && (
+        {section.images && section.imagesLayout === '1-left-2-right' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div>
+              <ProjectImage src={section.images[0]} alt="" fill />
+            </div>
+            <div className="flex flex-col gap-4">
+              {section.images.slice(1).map((src, i) => (
+                <ProjectImage key={i} src={src} alt="" fill />
+              ))}
+            </div>
+          </div>
+        )}
+        {section.images && !section.imagesLayout && (
           <div className={`grid gap-4 mt-4 ${section.images.length >= 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'}`}>
             {section.images.map((src, i) => (
               <ProjectImage key={i} src={src} alt="" />
