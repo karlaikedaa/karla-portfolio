@@ -22,7 +22,7 @@ export default function TimelineSection() {
             <h3 className="font-mono text-xs uppercase tracking-[0.15em] text-rose-text mb-8">
               Experiência Profissional
             </h3>
-            <div className="space-y-10 border-l border-warm/40 pl-5 md:pl-8 ml-1">
+            <div className="space-y-10 border-l border-warm/40 pl-7 md:pl-8 ml-px">
               {experience.map((item) => (
                 <TimelineItem key={item.company + item.period} item={item} type="experience" />
               ))}
@@ -37,7 +37,7 @@ export default function TimelineSection() {
               <h3 className="font-mono text-xs uppercase tracking-[0.15em] text-rose-text mb-8">
                 Formação
               </h3>
-              <div className="space-y-8 border-l border-warm/40 pl-5 md:pl-8 ml-1">
+              <div className="space-y-8 border-l border-warm/40 pl-7 md:pl-8 ml-px">
                 {education.map((item) => (
                   <TimelineItem key={item.title + item.period} item={item} type="education" />
                 ))}
@@ -91,7 +91,8 @@ function TimelineItem({ item, type }) {
     <div className="relative">
       {/* Timeline dot */}
       <span
-        className="absolute -left-[1.45rem] md:-left-[2.125rem] top-[6px] w-2.5 h-2.5 rounded-full bg-rose-accent/70 border-2 border-white"
+        className="absolute top-[6px] w-[10px] h-[10px] rounded-full bg-rose-accent border-2 border-off-white"
+        style={{ left: 'calc(-1.75rem - 10px)' }}
         aria-hidden="true"
       />
       <div className="space-y-1.5">
