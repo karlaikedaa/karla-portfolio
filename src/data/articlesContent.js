@@ -115,7 +115,7 @@ export const articlesContent = {
     tag: 'Acessibilidade',
     title: '3 maneiras simples de começar a virar a chave da acessibilidade no dia a dia da sua empresa',
     date: 'Janeiro 2022',
-    coverImage: '/images/projects/design-grafico/Captura de tela 2026-03-08 011859.png',
+    coverImage: '/images/projects/artigos/acessibilidade.jpg',
     lead: 'A acessibilidade vai muito além das limitações permanentes. Uma mãe com o bebê no colo, um motorista no trânsito ou um idoso recém-operado. Todos precisam de interfaces pensadas para eles.',
     source: {
       label: 'Blog BRQ — Janeiro de 2022',
@@ -148,7 +148,7 @@ export const articlesContent = {
     tag: 'UX Writing',
     title: 'Como aplicar técnicas de UX Writing em seus projetos digitais',
     date: 'Janeiro 2022',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/writing.png',
     lead: 'Por muito tempo negligenciada, a escrita em produtos digitais se torna cada vez mais relevante para a experiência do usuário. Entenda como construir um Dicionário de Vocabulário Controlado e colocar o usuário no centro da sua comunicação.',
     source: {
       label: 'Comunidade How: How Education — Setembro de 2020',
@@ -184,7 +184,7 @@ export const articlesContent = {
     tag: 'Educação Digital',
     title: 'Como poderemos reinventar as instituições de ensino na pós-pandemia?',
     date: 'Abril 2020',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/ensino pos pandemia.png',
     lead: 'Com criatividade e investimento assertivo, escolas digitais podem ir muito além de aulas online e acervos acadêmicos digitais. Uma reflexão sobre o futuro da educação na era digital.',
     source: {
       label: 'OSAS Blog — Abril de 2020',
@@ -218,7 +218,7 @@ export const articlesContent = {
     tag: 'RH & Tecnologia',
     title: 'Aprenda a tornar seu RH mais eficiente com automatização de processos',
     date: 'Abril 2020',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/rh eficiente.png',
     lead: 'O isolamento social evidencia a necessidade de uma revolução digital em todas as áreas das empresas, mas do departamento de Recursos Humanos a urgência é ainda maior',
     source: {
       label: 'OSAS Blog — Abril de 2020',
@@ -246,7 +246,7 @@ export const articlesContent = {
     tag: 'Transformação Digital',
     title: 'A sua empresa está preparada para o cenário digital?',
     date: 'Março 2020',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/empresa.png',
     lead: 'O trabalho remoto já é realidade em grandes organizações e, cada dia mais, gestores procuram meios de se adaptarem a essa situação',
     source: {
       label: 'OSAS Blog — Março de 2020',
@@ -285,7 +285,7 @@ export const articlesContent = {
     tag: 'Setor Público',
     title: 'Tecnologia em prol da desburocratização dos órgãos públicos',
     date: 'Abril 2019',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/orgaos publicos.png',
     lead: 'Em todas as áreas da gestão governamental é possível fazer uso da tecnologia para trazer mais transparência e agilidade no atendimento à população',
     source: {
       label: 'OSAS Blog — Abril de 2019',
@@ -310,7 +310,7 @@ export const articlesContent = {
     tag: 'Gestão Escolar',
     title: 'Administração Escolar mais transparente e efetiva com aplicação do conceito BPMN',
     date: 'Março 2019',
-    coverImage: null,
+    coverImage: '/images/projects/artigos/administracao escolar.png',
     lead: 'Uso de sistemas de workflow e tecnologia OCR permitem melhor gestão e adequação à legislação referente à gestão digital de acervo acadêmico',
     source: {
       label: 'OSAS Blog — Março de 2019',
