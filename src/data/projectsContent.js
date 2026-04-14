@@ -183,7 +183,7 @@ export const projectsContent = {
           'Implantação da jornada de alteração de conta liquidação a fim de sanar um dos principais bloqueios de clientes para negociação de ativos.',
           'Revisão de mensagens de erros.',
         ],
-        bodyImage: '/images/projects/ion/29571b05-f9d8-40ac-8e66-556a7c0f49d4_rw_1920.png',
+        bodyImage: '/images/projects/ion/5df9270e-bad7-4e2d-bc51-6106ce7686a9_rw_1920.png',
         body2: [
           'Além disso, também foram entregues as funcionalidades de Ordem a Mercado, não existente nos canais legados, sendo uma novidade no íon app e web; e Ordem com Data de Validade, feature desejada pelos clientes e apontada como motivo de abandono de jornada antes de sua implantação. Um pouco mais dessas jornadas podem ser analisadas no vídeo a seguir:',
         ],
