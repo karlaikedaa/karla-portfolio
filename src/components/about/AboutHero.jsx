@@ -44,7 +44,7 @@ export default function AboutHero() {
         <div className="flex flex-wrap gap-4 pt-2">
           <Button
             variant="outline"
-            href="https://docs.google.com/document/d/11Mti9GG8ctCRyEE-1H9V13oBIva1yYrI/edit?usp=sharing&ouid=106812508871585110962&rtpof=true&sd=true"
+            href="https://docs.google.com/document/d/11Mti9GG8ctCRyEE-1H9V13oBIva1yYrI/edit?usp=sharing&rtpof=true&sd=true"
             target="_blank"
             rel="noopener noreferrer"
             icon={
